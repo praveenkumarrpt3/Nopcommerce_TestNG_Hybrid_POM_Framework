@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.nopcommerce.qa.tests.RegisterTest">
+        <methods>
+          <include name="setupbrowser"/>
+          <include name="registerWithDuplicateMailId"/>
+          <include name="tearoffBrowser"/>
+        </methods>
+      </class> <!-- com.nopcommerce.qa.tests.RegisterTest -->
+      <class name="com.nopcommerce.qa.tests.SearchTest">
+        <methods>
+          <include name="tearoffBrowser"/>
+          <include name="search_a_Product_Without_Login"/>
+          <include name="setupbrowser"/>
+        </methods>
+      </class> <!-- com.nopcommerce.qa.tests.SearchTest -->
+      <class name="com.nopcommerce.qa.tests.LoginTest">
+        <methods>
+          <include name="tearoffBrowser"/>
+          <include name="loginWithInvalidEmailAndValidPassword"/>
+          <include name="setupbrowser"/>
+          <include name="loginWithValidEmailAndInvalidPassword"/>
+        </methods>
+      </class> <!-- com.nopcommerce.qa.tests.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
